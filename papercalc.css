@@ -1,0 +1,114 @@
+	
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1{
+	text-align: center;
+	margin-top:4%;
+	font-size: 300%;
+}
+
+.calc-wrapper{
+	display:flex;
+	min-height:40rem;
+	width:24rem;
+	background-color: white;
+	display: flex;
+	margin: 2% auto;
+	box-shadow: 1px 1px 4px 1px  rgba(0,0,0,.4);
+	border-radius: 1%;
+
+}
+
+
+#calcbody{
+	display:flex;
+	margin: auto;
+	flex-wrap:wrap;
+	flex-direction:column;
+	/*box-shadow: 1px 0 4px 1px  rgba(0,0,0,.8);*/
+	background-color: white;
+}
+
+#display{
+	border: .5px solid rgba(0,0,0,.5);
+	width:21.75rem;
+	height:5rem;
+	/*box-shadow: 0 0 2px  rgba(0,0,0,.5);*/
+	display: flex;
+	text-align: center;
+	font-weight: bold;
+	font-size: 100%;
+}
+.button{
+	width:5rem;
+	height:5rem;
+	background-color: white;
+	box-shadow: none;
+	font-weight: bold;
+	font-size: 200%;
+	border: none;
+	margin: .25rem;
+	box-shadow: 0 0 3px  rgba(0,0,0,.5);
+	border-radius: 5%;
+	transition:.15s;
+	outline: none;
+}
+
+.button:active{
+	box-shadow: 1px 1px 4px 1px  rgba(0,0,0,.7);
+}
+
+
+.row{
+	display:flex;
+	flex-direction:row;
+}
+
+.equalsbutton{
+	width:10.5rem;
+	height:5rem;
+	background-color: white;
+	box-shadow: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 200%;
+	border: none;
+	margin: .25rem;
+	box-shadow: 0 0 3px  rgba(0,0,0,.5);
+	border-radius: 5%;
+	transition:.1s;
+	outline: none;
+}
+
+.color-selector{
+	width: 100%;
+	display: flex;
+	flex-direction:row;
+}
+
+.color-box{
+	display: flex;
+	flex-direction:row;
+	margin: auto;
+}
+
+.color{
+	width: 65px;
+	height:65px;
+	border-radius: 100%;
+	margin-right: 10px;
+	margin-left: 10px;
+	box-shadow: 1px 1px 4px 1px  rgba(0,0,0,.3);
+}
+
+.color:hover{
+	box-shadow: 1px 1px 4px 1px  rgba(0,0,0,.7);
+}
+
+.red{background-color: #E57373;}
+.green{background-color: #AED581;}
+.orange{background-color: #FFB74D;}
+.blue{background-color: #4DD0E1;}
+.purple{background-color: #9575CD;}
