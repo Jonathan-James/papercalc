@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="papercalc.css">
+		<link href='https://fonts.googleapis.com/css?family=Lobster+Two|Sansita+One|Roboto' rel='stylesheet' type='text/css'>
+	</head>
+	<body>	
+			<h1>paperCalc</h1>
+			<div class="calc-wrapper">
+				<form id="calcbody">
+
+						<input type="text" id="display" name="display">
+						<div class="row4 row">
+							<input type="button" value="c" id="c" class="button" onclick="addtoscreen('c')">
+							<input type="button" value="<--" id="backspace" class="button" onclick="removenumber()">
+							<input type="button" value="=" id="eqauls" class="button equalsbutton" onclick="answer()"> 
+						</div>
+						<div class="row1 row">				
+							<input type="button" value="1" id="buttonOne" class="button" onclick="addtoscreen('1')">
+							<input type="button" value="2" id="buttonTwo" class="button" onclick="addtoscreen('2')">
+							<input type="button" value="3" id="buttonThree" class="button" onclick="addtoscreen('3')">
+							<input type="button" value="4" id="4" class="button" onclick="addtoscreen('4')">
+						</div>
+						<div  class="row2 row">
+							<input type="button" value="5" id="5" class="button" onclick="addtoscreen('5')">
+							<input type="button" value="6" id="6" class="button" onclick="addtoscreen('6')">
+							<input type="button" value="7" id="7" class="button" onclick="addtoscreen('7')">
+							<input type="button" value="8" id="8" class="button" onclick="addtoscreen('8')">
+						</div>
+						<div class="row3 row">
+							<input type="button" value="9" id="9" class="button" onclick="addtoscreen('9')">
+							<input type="button" value="0" id="0" class="button" onclick="addtoscreen('0')">
+							<input type="button" value="(" id="left-parenth" class="button" onclick="addtoscreen('(')">
+							<input type="button" value=")" id="right-parenth" class="button" onclick="addtoscreen(')')">
+							
+						</div>
+						<div class="row4 row">
+							<input type="button" value="." id="period" class="button" onclick="addtoscreen('.')">
+							<input type="button" value="+" id="+" class="button" onclick="addtoscreen('+')">
+							<input type="button" value="-" id="-" class="button" onclick="addtoscreen('-')">
+							<input type="button" value="*" id="*" class="button"  onclick="addtoscreen('*')">
+						</div>
+						<div class="row5 row">
+							<input type="button" value="/" id="/" class="button"  onclick="addtoscreen('/')">
+							<input type="button" value="%" id="%" class="button"  onclick="addtoscreen('%')">
+							<input type="button" value="^2" id="power2" class="button" onclick="power('2')">
+							<input type="button" value="^3" id="power3" class="button" onclick="power('3')">
+						</div>
+				</form>
+			</div>
+			<div class="color-selector">
+				<div class="color-box">	
+					<div class="red color"></div>
+					<div class="orange color"></div>
+					<div class="green color"></div>
+					<div class="blue color"></div>
+					<div class="purple color"></div>	
+				</div>
+			</div>				
+		<script src="jquery-2.2.0.min.js"></script>
+		<script src="papercalc.js"></script>
+		<script src="color.js"></script>
+	</body>
+</html>
